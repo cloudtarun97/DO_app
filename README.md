@@ -47,3 +47,41 @@ $ python manage.py runserver
 Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
 
 Cheers and Happy Coding :)
+
+```
+
+ubuntu instance
+-----------------------------------------
+install git, docker , python, django
+
+sudo apt install python3-django
+
+python3 manage.py runserver
+
+python3 manage.py runserver 0.0.0.0:8001
+
+create an image and run the container on 8001 port 
+manage security groups to custom tcp to port 8001 
+
+
+```
+
+vi todoApp/settings.py (Allow-hosts)
+
+-----------------------------------
+create a dockerfile
+
+FROM python:3
+RUN pip install django==3.2
+COPY . .
+RUN python manage.py migrate
+CMD ["python3", "manage.py", "runserver","0.0.0.0:8001"]
+-----------------------------------
+docker build . -t (name)
+
+docker run -d --name (name_container) -p 8001:8001  (name)
+
+```
+
+
+
