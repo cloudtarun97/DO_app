@@ -12,6 +12,7 @@ You will need django to be installed in you computer to run this app. Head over 
 pip install virtualenv
 
 virtualenv venv
+--
 venv\Scripts\activate
 
 Install Django
