@@ -16,7 +16,7 @@ Install Django
 py -m pip install Django
 
 python -m pip install Django
-
+```
 Once you have downloaded django, go to the cloned repo directory and run the following command
 
 ```bash
