@@ -50,6 +50,8 @@ Cheers and Happy Coding :)
 
 ```
 
+pip freeze > requirements.txt
+```bash
 ubuntu instance
 -----------------------------------------
 install git, docker , python, django
@@ -62,12 +64,10 @@ python3 manage.py runserver 0.0.0.0:8001
 
 create an image and run the container on 8001 port 
 manage security groups to custom tcp to port 8001 
-
-
 ```
-```
-vi todoApp/settings.py (Allow-hosts)
 
+vi todoApp/settings.py (Allow-hosts)[*]
+```bash
 -----------------------------------
 create a dockerfile
 
@@ -82,6 +82,3 @@ docker build . -t (name)
 docker run -d --name (name_container) -p 8001:8001  (name)
 
 ```
-
-
-
