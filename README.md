@@ -11,8 +11,8 @@ You will need django to be installed in you computer to run this app. Head over 
 
 pip install virtualenv
 
-virtualenv venvironment
-venvironment\Scripts\activate
+virtualenv venv
+venv\Scripts\activate
 
 Install Django
 
@@ -48,9 +48,10 @@ Once the server is hosted, head over to http://127.0.0.1:8000/todos for the App.
 
 Cheers and Happy Coding :)
 
+pip freeze > requirements.txt
+
 ```
 
-pip freeze > requirements.txt
 ```bash
 ubuntu instance
 -----------------------------------------
@@ -67,6 +68,7 @@ manage security groups to custom tcp to port 8001
 ```
 
 vi todoApp/settings.py (Allow-hosts)[*]
+
 ```bash
 -----------------------------------
 create a dockerfile
